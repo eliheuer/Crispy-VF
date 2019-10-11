@@ -21,7 +21,7 @@ export default class PreviewCanvas extends Component {
 		this.draw6(this.ctx);
 		// this.draw6(this.ctx2, true);
 		// this.drawAndel(this.ctx);
-		this.setupCharacters(this.props.font);
+		// this.setupCharacters(this.props.font);
 		// this.drawLeft();
 	}
 
@@ -164,7 +164,9 @@ export default class PreviewCanvas extends Component {
 		ctx.scale(this.state.ratio, this.state.ratio);
 
 		// console.log('Cleared rect');
+		//Clears the entire canvas
 		ctx.clearRect(0, 0, width, height);
+		ctx.beginPath();
 
 		let scale = (1 / font.unitsPerEm) * fontSize;
 		let x = 0;
