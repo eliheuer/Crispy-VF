@@ -10,6 +10,7 @@ OOEOO
 OOFOO
 OOGOO
 OOHOO
+OOIOO
 `;
 @autobind
 export default class Preview extends Component {
