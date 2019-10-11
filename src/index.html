@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<style>
+			body {
+				background: #eee;
+				font-family: 'Avenir Next', Helvetica, sans-serif;
+				font-size: 15px;
+			}
+
+			.font-loader {
+				margin: 40px auto;
+				background: white;
+				padding: 40px;
+				border-radius: 5px;
+				border: 1px solid #dedede;
+				box-shadow: 0 0 5px #ddd;
+			}
+
+			select,
+			input,
+			label {
+				margin-bottom: 10px;
+			}
+
+			.preview .font-size label,
+			.variation-selector .axis label {
+				display: inline-block;
+				width: 100px;
+			}
+
+			.preview .font-size input,
+			.variation-selector .axis input {
+				vertical-align: top;
+				vertical-align: -webkit-baseline-middle;
+			}
+
+			.preview > canvas {
+				display: block;
+			}
+			.preview > div {
+				display: grid;
+				grid-template-columns: 100%;
+			}
+
+			.preview > input {
+				margin-right: 5px;
+			}
+
+			.preview .text-input > input {
+				width: 100%;
+				unicode-bidi: plaintext;
+			}
+
+			.preview > * {
+				margin-bottom: 0;
+			}
+
+			.inspector {
+				margin: 20px 0;
+			}
+
+			.inspector th {
+				font-weight: 600;
+				text-align: right;
+			}
+
+			footer {
+				text-align: center;
+			}
+
+			.feature-selector {
+				margin-top: 20px;
+			}
+
+			.variation-selector .axis > label,
+			.preview .font-size > label,
+			.feature-selector > label {
+				margin: 0 5px;
+			}
+
+			.features {
+				column-count: 4;
+				margin-top: 5px;
+			}
+
+			.features label {
+				display: block;
+				margin-bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="./app.js"></script>
+	</body>
+</html>
